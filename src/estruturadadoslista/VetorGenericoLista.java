@@ -1,4 +1,4 @@
-
+git statusgit
 package estruturadadoslista;
 
 
@@ -9,6 +9,10 @@ public class VetorGenericoLista <T>{
     //construtor da classe vetor
     public VetorGenericoLista(int tamanho){
       elementos = (T[]) new Object[tamanho];
+      this.tamanho = 0;
+    }
+    public VetorGenericoLista(){
+      elementos = (T[]) new Object[10];
       this.tamanho = 0;
     }
     //Adicionar elemento no final da lista
